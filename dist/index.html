@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#33130B" />
+  <title>تَفَقَّدْ — منصة التحليلات الأمنية</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="التنقل الرئيسي">
+      <div class="brand">
+        <div class="brand-mark">ت</div>
+        <div><strong id="brandName">تَفَقَّدْ</strong><small id="brandTagline">التحليلات الأمنية</small></div>
+      </div>
+      <nav id="nav"></nav>
+      <button class="about-link" id="aboutButton" type="button"></button>
+      <div class="sidebar-status"><span class="status-dot"></span><span id="systemStatus"></span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-button menu-button" id="menuButton" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+        <div class="page-heading"><p id="eyebrow"></p><h1 id="pageTitle"></h1></div>
+        <div class="top-actions">
+          <button class="secondary-button" id="languageButton" type="button">English</button>
+          <button class="primary-button" id="importButton" type="button"></button>
+          <input id="fileInput" type="file" hidden />
+        </div>
+      </header>
+
+      <div class="demo-banner" id="demoBanner" hidden>
+        <span>✦</span><strong id="demoText"></strong><button id="clearDemo" type="button"></button>
+      </div>
+      <section id="content" class="content" aria-live="polite"></section>
+    </main>
+  </div>
+  <div class="scrim" id="scrim"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
